@@ -23,21 +23,12 @@
     --font-Waldorf1: Waldorf1, "sans-serif";
     --font-Waldorf2: Waldorf2, "sans-serif";
     --font-Waldorf2bold: Waldorf2bold, "sans-serif";
-    --color-roxo-escuro: #A2236A;
+    --color-roxo-escuro: #61265A;
+    --color-roxo-quase: #A2236A;
     --color-rosa-medio: #E53237;
     --color-rosa-quase: #f7afd3;
     --color-rosa-claro: #efc3dc;
     --color-rosa-pastel: #ffe8f5;
     --color-salmao: #f794a1;
     --color-laranja: #f37647;
-}
-
-:root {
-  --color-roxo-escuro: #A2236A;
-  --color-rosa-medio: #E53237;
-  --color-rosa-quase: #f7afd3;
-  --color-rosa-claro: #efc3dc;
-  --color-rosa-pastel: #ffe8f5;
-  --color-salmao: #f794a1;
-  --color-laranja: #f37647;
 }
