@@ -59,7 +59,7 @@ function Navbar ()
 
                         {/* modal controlado por useState */}
                         <div className={`absolute p-6 bg-roxo-escuro rounded-xl text-gray-300 text-lg font-Waldorf2 transition-all flex flex-col items-start gap-2 cursor-default 
-                        meio:w-40 laptop:w-48 note:w-63 4k:w-96 4k:text-3xl 4k:gap-4 4k:p-8 ${ escolaOpen ? " pointer-events-auto opacity-100 meio:translate-y-29 laptop:translate-y-30 note:translate-y-24 4k:translate-y-34" : "pointer-events-none opacity-50 meio:translate-y-14.5 laptop:translate-y-13 note:translate-y-4 4k:translate-y-5"}`
+                        meio:w-40 laptop:w-48 note:w-63 4k:w-96 4k:text-3xl 4k:gap-4 4k:p-8 ${ escolaOpen ? " pointer-events-auto opacity-100 meio:translate-y-29 laptop:translate-y-30 note:translate-y-24 4k:translate-y-34" : "pointer-events-none opacity-0 meio:translate-y-14.5 laptop:translate-y-13 note:translate-y-4 4k:translate-y-5"}`
                         }>
                             <div className="cursor-pointer group">
                                 <p className="transition-all duration-400 group-hover:text-white">A história da Florescer</p>
@@ -95,7 +95,7 @@ function Navbar ()
 
                         {/* modal controlado por useState */}
                         <div className={`absolute p-6 bg-roxo-escuro rounded-xl text-gray-300 text-lg font-Waldorf2 transition-all flex flex-col items-start gap-2 cursor-default 
-                        meio:w-40 laptop:w-48 note:w-63 4k:w-96 4k:text-3xl 4k:gap-4 4k:p-8 ${ ensinoOpen ? "pointer-events-auto opacity-100 meio:translate-y-25 laptop:translate-y-26 note:translate-y-24 4k:translate-y-34" : "pointer-events-none opacity-50 meio:translate-y-11 laptop:translate-y-9 note:translate-y-4 4k:translate-y-5"}`
+                        meio:w-40 laptop:w-48 note:w-63 4k:w-96 4k:text-3xl 4k:gap-4 4k:p-8 ${ ensinoOpen ? "pointer-events-auto opacity-100 meio:translate-y-25 laptop:translate-y-26 note:translate-y-24 4k:translate-y-34" : "pointer-events-none opacity-0 meio:translate-y-11 laptop:translate-y-9 note:translate-y-4 4k:translate-y-5"}`
                         }>
                             <div className="cursor-pointer group">
                                 <p className="transition-all duration-400 group-hover:text-white">Jardim de infância</p>
@@ -131,7 +131,7 @@ function Navbar ()
 
                         {/* modal controlado por useState */}
                         <div className={`absolute p-6 bg-roxo-escuro rounded-xl text-gray-300 text-lg font-Waldorf2 transition-all flex flex-col items-start gap-2 cursor-default 
-                        meio:w-40 laptop:w-48 note:w-63 4k:w-96 4k:text-3xl 4k:gap-4 4k:p-8 ${ festasOpen ? "pointer-events-auto opacity-100 meio:translate-y-41 laptop:translate-y-35 note:translate-y-33.5 4k:translate-y-47" : "pointer-events-none opacity-50 laptop:translate-y-18 meio:translate-y-27 note:translate-y-13.5 4k:translate-y-18"}`
+                        meio:w-40 laptop:w-48 note:w-63 4k:w-96 4k:text-3xl 4k:gap-4 4k:p-8 ${ festasOpen ? "pointer-events-auto opacity-100 meio:translate-y-41 laptop:translate-y-35 note:translate-y-33.5 4k:translate-y-47" : "pointer-events-none opacity-0 laptop:translate-y-18 meio:translate-y-27 note:translate-y-13.5 4k:translate-y-18"}`
                         }>
                             <div className="cursor-pointer group">
                                 <p className="transition-all duration-400 group-hover:text-white">Festa da lanterna</p>
