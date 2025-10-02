@@ -20,9 +20,16 @@
 
 @theme
 {
+    --breakpoint-tablet: 400px;
+    --breakpoint-meio: 868px;
+    --breakpoint-laptop: 1024px;
+    --breakpoint-note: 1440px;
+    --breakpoint-4k: 1800px;
+
     --font-Waldorf1: Waldorf1, "sans-serif";
     --font-Waldorf2: Waldorf2, "sans-serif";
     --font-Waldorf2bold: Waldorf2bold, "sans-serif";
+    
     --color-roxo-escuro: #61265A;
     --color-roxo-quase: #A2236A;
     --color-rosa-medio: #E53237;
