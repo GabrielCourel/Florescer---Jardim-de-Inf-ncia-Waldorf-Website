@@ -1,0 +1,125 @@
+@import "../index.css";
+
+.containerPrincipal 
+{
+    @apply relative top-0 h-20 z-20 tablet:flex meio:h-30 laptop:h-38 note:h-44 4k:h-60;
+}
+
+.fundoRosa
+{
+    @apply w-full absolute -z-20 h-24 tablet:h-36 meio:h-44 laptop:h-52 note:h-58 4k:h-80;
+}
+
+.divlogoFlorescer
+{
+    @apply mx-3 flex justify-between items-center tablet:w-full tablet:mx-6 tablet:my-auto meio:w-auto meio:mx-0 meio:ml-2 meio:scale-80 laptop:scale-90 note:ml-4 note:scale-100 4k:scale-130 4k:ml-14;
+}
+
+.logoFlorescer
+{
+    @apply contents justify-between items-center tablet:flex tablet:justify-start meio:flex-col meio:justify-start;
+}
+
+.logo
+{
+    @apply hover:scale-110 duration-300 cursor-pointer  h-13 my-3 tablet:h-20 meio:my-0 laptop:ml-0 laptop:my-0 laptop:h-24 note:h-26;
+}
+
+.florescerJardim
+{
+    @apply cursor-pointer h-full w-40 tablet:h-15 tablet:w-60 note:h-13;
+}
+
+.hamburguer
+{
+    @apply z-100 tablet:scale-160 meio:hidden;
+}
+
+.containerAquarelas
+{
+    @apply flex items-center mx-auto meio:gap-4 laptop:gap-8 note:gap-10;
+}
+
+.divAquarelas
+{
+    @apply hidden relative h-20 justify-center items-center meio:flex;
+}
+
+.divAquarelaContato
+{
+    @apply hidden relative justify-center items-center cursor-pointer meio:flex;
+}
+
+.pincelada
+{
+    @apply cursor-pointer transition-all duration-400 meio:w-38 meio:h-12 laptop:w-46 laptop:h-14 note:h-16 note:w-60 4k:w-90 4k:h-24;
+}
+
+.pinceladaContato
+{
+    @apply h-16 w-60 transition-all duration-400 meio:w-38 meio:h-12 laptop:w-46 laptop:h-14 note:h-16 note:w-60 4k:w-90 4k:h-24;
+}
+
+.pinceladaSvg
+{
+    @apply ml-1 transition-transform duration-400 meio:w-4 meio:h-4 laptop:w-5 laptop:h-5 note:w-6 note:h-6 4k:w-8 4k:h-8;
+}
+
+.escritoPincelada
+{
+    @apply absolute z-10 flex justify-center items-center font-Waldorf1 duration-400 transition-all ease-in-out cursor-pointer meio:text-lg laptop:text-xl note:text-2xl 4k:text-4xl;
+}
+
+.useState
+{
+    @apply absolute p-6 bg-roxo-escuro rounded-xl text-gray-300 text-lg font-Waldorf2 transition-all flex flex-col items-start gap-2 cursor-default meio:w-40 laptop:w-48 note:w-63 4k:w-96 4k:text-3xl 4k:gap-4 4k:p-8;
+}
+
+.divBarra
+{
+    @apply bg-white scale-x-0 transition-all duration-400 ease-in-out transform-gpu meio:h-0 note:h-px;
+}
+:global(.group):hover .divBarra
+{
+    @apply scale-x-100;
+}
+
+.modalMT
+{
+    @apply fixed top-0 min-h-screen w-full transition-all duration-600 ease-in-out tablet:flex tablet:justify-center meio:hidden;
+}
+
+.fundoM
+{
+    @apply absolute min-h-screen w-full meio:hidden;
+}
+
+.containerM
+{
+    @apply relative max-h-screen max-w-full flex flex-col items-center gap-6 my-16 mx-10 text-white tablet:my-auto tablet:flex-row meio:hidden;
+}
+
+.divsT
+{
+    @apply flex flex-col items-center gap-6 tablet:gap-3;
+}
+
+.topicosM
+{
+    @apply w-48 flex flex-col gap-2 border border-none rounded-xl bg-roxo-quase shadow-lg shadow-black/13 p-2 tablet:p-6 tablet:w-full;
+}
+
+.titulosM
+{
+    @apply font-Waldorf2 text-xl text-center;
+}
+
+.subtitulosM
+{
+    @apply text-lg text-rosa-pastel flex flex-col items-center gap-1;
+}
+
+.contatoM
+{
+    @apply w-48 font-Waldorf2 text-center text-xl border border-none rounded-xl bg-roxo-quase shadow-lg shadow-black/13 p-2 tablet:p-6;
+}

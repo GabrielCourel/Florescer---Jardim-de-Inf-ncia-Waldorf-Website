@@ -16,8 +16,6 @@
     src: url("../src/assets/fonts/BaarPhilosBold-K7jl.ttf")
 }
 
-@import "tailwindcss";
-
 @theme
 {
     --breakpoint-tablet: 440px;
@@ -39,3 +37,5 @@
     --color-salmao: #f794a1;
     --color-laranja: #f37647;
 }
+
+@import "tailwindcss";
