@@ -1,0 +1,51 @@
+@import "../index.css";
+
+.degrade
+{
+    @apply bg-linear-to-r from-white to-rosa-quase bg-clip-text text-transparent
+}
+
+.degrade2
+{
+    @apply bg-linear-to-r from-roxo-quase to-rosa-medio bg-clip-text text-transparent
+}
+
+.degrade3
+{
+    @apply bg-linear-to-r from-roxo-quase to-pink-500 bg-clip-text text-transparent
+}
+
+.divPrincipal
+{
+    @apply flex flex-col justify-center items-center
+}
+
+.fundoHome
+{
+    @apply relative -z-30 w-full h-190 -top-10 tablet:h-200 meio:h-140 laptop:h-160 note:h-180 4k:h-240
+}
+
+.divImagem
+{
+    @apply absolute -z-30 w-full h-full object-cover
+}
+
+.fundoRoxo
+{
+    @apply absolute -z-20 w-full h-full bg-roxo-escuro opacity-55
+}
+
+.textoFoto
+{
+    @apply absolute mt-12 mx-8 flex flex-col justify-start items-center gap-3 h-full max-w-full text-white font-quaseW font-semibold tablet:mt-20 tablet:mx-20 meio:mt-25 laptop:mx-25 4k:mt-35 4k:mx-30
+}
+
+.paragrafo
+{
+    @apply text-2xl font-quaseW tablet:text-3xl meio:text-4xl note:text-5xl 4k:text-6xl
+}
+
+.mencao
+{
+    @apply  text-xl font-quaseW self-start -translate-x-4 tablet:text-2xl meio:text-3xl note:text-4xl 4k:text-5xl
+}

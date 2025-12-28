@@ -29,16 +29,17 @@ function Navbar ()
             </svg>
 
             {/* logo Florescer */}
-            <div className={style.divlogoFlorescer}>
-                
+            <div className={style.divlogoFlorescer}>   
+
                 <div className={style.logoFlorescer}>
                     <img src={logo} className={style.logo} />
                     <img src={florescerJardim} className={style.florescerJardim} />
                 </div>
-                
+
                 <div className={style.hamburguer}>
                     <Hamburger color="#A2236A" size={22} duration={0.6} toggled={hamburgerOpen} toggle={setHamburgerOpen}/>           
                 </div>
+
             </div>
 
             <div className={style.containerAquarelas}>
@@ -160,7 +161,7 @@ function Navbar ()
             </div>
 
             {/* modal mobile e tablet para a navbar*/}
-            <div className={`${style.modalMT} ${ hamburgerOpen ? "opacity-100" : "translate-x-full opacity-0"}`}>
+            <div className={`${style.modalMT} ${ hamburgerOpen ? "opacity-100 translate-x-0 pointer-events-auto" : "pointer-events-none translate-x-full opacity-0"}`}>
                 <img src={fundoMobile} className={style.fundoM}/>
 
                 <div className={style.containerM}>

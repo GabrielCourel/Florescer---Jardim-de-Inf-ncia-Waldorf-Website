@@ -16,6 +16,13 @@
     src: url("../src/assets/fonts/BaarPhilosBold-K7jl.ttf")
 }
 
+@font-face
+{
+    font-family: quaseW;
+    src: url("src/assets/fonts/Armata-Regular.ttf")
+}
+
+
 @theme
 {
     --breakpoint-tablet: 440px;
@@ -27,6 +34,7 @@
     --font-Waldorf1: Waldorf1, "sans-serif";
     --font-Waldorf2: Waldorf2, "sans-serif";
     --font-Waldorf2bold: Waldorf2bold, "sans-serif";
+    --font-quaseW: quaseW, "sans-serif"; 
     
     --color-roxo-escuro: #61265A;
     --color-roxo-quase: #A2236A;

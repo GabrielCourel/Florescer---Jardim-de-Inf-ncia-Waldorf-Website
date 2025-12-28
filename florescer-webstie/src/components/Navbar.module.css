@@ -1,38 +1,38 @@
 @import "../index.css";
 
-.containerPrincipal 
+.containerPrincipal
 {
-    @apply relative top-0 h-20 z-20 tablet:flex meio:h-30 laptop:h-38 note:h-44 4k:h-60;
+    @apply relative top-0 h-30 z-20 tablet:flex meio:h-30 laptop:h-38 note:h-44 4k:h-60;
 }
 
 .fundoRosa
 {
-    @apply w-full absolute -z-20 h-24 tablet:h-36 meio:h-44 laptop:h-52 note:h-58 4k:h-80;
+    @apply w-full absolute -z-20 h-30 tablet:h-36 meio:h-44 laptop:h-52 note:h-58 4k:h-80;
 }
 
 .divlogoFlorescer
 {
-    @apply mx-3 flex justify-between items-center tablet:w-full tablet:mx-6 tablet:my-auto meio:w-auto meio:mx-0 meio:ml-2 meio:scale-80 laptop:scale-90 note:ml-4 note:scale-100 4k:scale-130 4k:ml-14;
+    @apply mx-3 flex justify-between items-center tablet:w-full tablet:mx-6 tablet:my-auto meio:w-auto meio:mx-0 meio:ml-2 meio:scale-80 meio:translate-y-1.5 laptop:scale-90 laptop:translate-y-2 note:ml-4 note:scale-100 4k:scale-130 4k:ml-14;
 }
 
 .logoFlorescer
 {
-    @apply contents justify-between items-center tablet:flex tablet:justify-start meio:flex-col meio:justify-start;
+    @apply contents justify-between items-center tablet:flex tablet:justify-start meio:flex-col meio:justify-start meio:-translate-y-2 note:-translate-y-3;
 }
 
 .logo
 {
-    @apply hover:scale-110 duration-300 cursor-pointer  h-13 my-3 tablet:h-20 meio:my-0 laptop:ml-0 laptop:my-0 laptop:h-24 note:h-26;
+    @apply hover:scale-110 duration-300 cursor-pointer h-13 my-3 translate-y-3 tablet:h-20 tablet:translate-y-0 meio:my-0 laptop:ml-0 laptop:my-0 laptop:h-24 note:h-26;
 }
 
 .florescerJardim
 {
-    @apply cursor-pointer h-full w-40 tablet:h-15 tablet:w-60 note:h-13;
+    @apply cursor-pointer h-full w-40 translate-y-3 tablet:h-15 tablet:w-60 tablet:translate-y-0 note:h-13;
 }
 
 .hamburguer
 {
-    @apply z-100 tablet:scale-160 meio:hidden;
+    @apply relative z-100 translate-y-2 tablet:scale-160 tablet:-translate-y-1 meio:hidden;
 }
 
 .containerAquarelas
@@ -86,40 +86,40 @@
 
 .modalMT
 {
-    @apply fixed top-0 min-h-screen w-full transition-all duration-600 ease-in-out tablet:flex tablet:justify-center meio:hidden;
+    @apply fixed z-50 top-0 h-screen w-full transition-all duration-600 ease-in-out flex flex-col justify-center tablet:flex tablet:justify-center meio:hidden;
 }
 
 .fundoM
 {
-    @apply absolute min-h-screen w-full meio:hidden;
+    @apply absolute -z-10 min-h-screen w-full meio:hidden;
 }
 
 .containerM
 {
-    @apply relative max-h-screen max-w-full flex flex-col items-center gap-6 my-16 mx-10 text-white tablet:my-auto tablet:flex-row meio:hidden;
+    @apply relative max-h-screen max-w-full flex flex-col justify-center items-center gap-6 my-16 mx-10 text-white tablet:my-auto tablet:flex-row meio:hidden;
 }
 
 .divsT
 {
-    @apply flex flex-col items-center gap-6 tablet:gap-3;
+    @apply flex flex-col items-center gap-6 h-full tablet:gap-3;
 }
 
 .topicosM
 {
-    @apply w-48 flex flex-col gap-2 border border-none rounded-xl bg-roxo-quase shadow-lg shadow-black/13 p-2 tablet:p-6 tablet:w-full;
+    @apply w-56 flex flex-col items-center justify-center gap-2 border border-none rounded-xl bg-roxo-quase shadow-lg shadow-black/13 p-3 tablet:p-6 tablet:w-full;
 }
 
 .titulosM
 {
-    @apply font-Waldorf2 text-xl text-center;
+    @apply font-Waldorf2 text-2xl text-center;
 }
 
 .subtitulosM
 {
-    @apply text-lg text-rosa-pastel flex flex-col items-center gap-1;
+    @apply font-quaseW text-xl text-center text-rosa-pastel flex flex-col items-center gap-1;
 }
 
 .contatoM
 {
-    @apply w-48 font-Waldorf2 text-center text-xl border border-none rounded-xl bg-roxo-quase shadow-lg shadow-black/13 p-2 tablet:p-6;
+    @apply w-56 font-Waldorf2 flex justify-center items-center text-2xl border border-none rounded-xl bg-roxo-quase shadow-lg shadow-black/13 p-2 h-full tablet:p-6;
 }
