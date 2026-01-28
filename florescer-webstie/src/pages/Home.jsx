@@ -56,66 +56,66 @@ function Home ()
             </div>    
             
             {/* Div para o conteúdo abaixo da foto */}
-            <div className="flex flex-col justify-center items-center">
+            <div className={style.abaixoDaFoto}>
                 {/* SVG para curvatura abaixo da foto */}
                 <svg
                     viewBox="0 0 1440 176" 
                     preserveAspectRatio="none"      
-                    className="relative -z-20 top-0 w-full rotate-180 h-30 -translate-y-22"
+                    className={style.svgAbaixo}
                 >
                     <path d="M 1440 0 L 0 0 L 0 135 Q 390 150 640 137 Q 1140 115 1440 135 Z" className="fill-rosa-pastel"/>
                 </svg>
 
-                <div className="bg-rosa-pastel max-w-full h-full -translate-y-34 overflow-x-hidden note:w-full">
+                <div className={style.abaixo}>
 
-                    <div className="flex flex-col tablet:flex-row meio:mx-20 4k:mx-40 grande:mx-60">
+                    <div className={`${style.divUmTres} tablet:flex-row!`}>
                         <p  
-                            className="text-xl mx-8 font-quaseW text-justify hyphens-auto text-roxo-escuro tablet:text-2xl tablet:w-100 tablet:my-8 laptop:w-140 laptop:mx-0 laptop:mr-8 laptop:flex laptop:items-center note:text-3xl note:w-210 4k:text-4xl 4k:w-230 grande:text-5xl grande:w-300"
+                            className={style.textoUmTres}
                             data-aos="fade-up-right"
                         >
                             Há mais de 100 anos, a Pedagogia Waldorf prega aquilo que se tornou essencial nos dias de hoje: o desenvolvimento de inteligência emocional, pensamento crítico e autonomia. Em um mundo cada vez mais digital e acelerado, nossa abordagem se destaca por oferecer a resposta que os tempos atuais exigem
                         </p>
 
-                        <div className="w-80 h-80 my-8 mr-4 ml-auto rounded-tl-[4em] rounded-br-[4em] overflow-hidden note:w-90 note:h-90 grande:h-140 grande:w-140">
-                            <img src={novelo} className="w-full h-full object-cover" data-aos="fade-left"/>
+                        <div className={style.fotoUm}>
+                            <img src={novelo} className={style.padrao} data-aos="fade-left"/>
                         </div>
                     </div>
 
-                    <div className="w-full my-8 mr-4 -translate-x-16 flex gap-8 tablet:translate-x-0 tablet:gap-12 note:my-12">
+                    <div className={style.divDois}>
 
-                        <div className="w-70 h-80 note:w-80 note:h-90 grande:h-140 grande:w-130">
-                            <img src={corda} className="w-full h-full rounded-br-[4em] object-cover" data-aos="fade-right"/>
+                        <div className={style.fotosDois}>
+                            <img src={corda} className={`${style.padrao} rounded-br-[4em]`} data-aos="fade-right"/>
                         </div>
 
                         <p  
-                            className={`text-roxo-quase font-quaseW font-semibold text-3xl flex justify-center items-center w-full text-center tablet:mx-auto note:text-4xl 4k:text-5xl grande:text-6xl`}
+                            className={style.textoDois}
                             data-aos="fade-up"
                         >
                             Educar para o futuro é, antes de tudo, fortalecer o humano
                         </p>
 
-                        <div className="w-70 h-80 hidden foto:block note:w-80 note:h-90 grande:h-140 grande:w-130">
-                            <img src={olhando} className="w-full h-full rounded-tl-[4em] object-cover" data-aos="fade-left"/>
+                        <div className={`${style.fotosDois} hidden foto:block`}>
+                            <img src={olhando} className={`${style.padrao} rounded-tl-[4em]`} data-aos="fade-left"/>
                         </div>
             
                     </div>
 
-                    <div className="flex flex-col tablet:flex-row-reverse meio:mx-20 4k:mx-40 grande:mx-60">
+                    <div className={`${style.divUmTres} tablet:flex-row-reverse!`}>
                         <p  
-                            className="text-xl mx-8 font-quaseW text-justify hyphens-auto text-roxo-escuro tablet:text-2xl tablet:w-100 tablet:my-8 laptop:w-140 laptop:mx-0 laptop:ml-8 laptop:flex laptop:items-center note:text-3xl note:w-210 4k:text-4xl 4k:w-230 grande:text-5xl grande:w-300"
+                            className={style.textoUmTres}
                             data-aos="fade-up-left"
                         >
                             Aqui, voltamos o olhar para o potencial integral da criança, cultivando o pensar, o sentir e o querer na medida certa para cada idade, a fim de formar indivíduos criativos, resilientes e éticos, capazes de navegar a complexidade do mundo com equilíbrio e propósito
                         </p>
 
-                        <div className="w-80 h-80 my-8 mx-auto rounded-br-4xl rounded-tr-[4em] rounded-bl-[4em] overflow-hidden tablet:ml-4 note:w-90 note:h-90 grande:h-140 grande:w-140">
-                            <img src={aquarela} className="w-full h-full object-cover" data-aos="fade-right"/>
+                        <div className={style.fotoTres}>
+                            <img src={aquarela} className={style.padrao} data-aos="fade-right"/>
                         </div>
                     </div>
 
-                    <div className="flex flex-col tablet:flex-row tablet:justify-between meio:mx-20 note:my-12 4k:mx-40 grande:mx-60">
+                    <div className={style.divQuatro}>
                         <div    
-                            className={`text-xl text-center font-semibold mx-8 font-quaseW text-roxo-quase [&_.Typewriter]:inline tablet:flex tablet:justify-center tablet:items-center tablet:w-100 tablet:text-2xl tablet:my-8 tablet:mx-4 laptop:mx-0 laptop:w-120 note:text-3xl note:w-220 4k:text-4xl 4k:w-260 grande:text-5xl grande:w-280`}
+                            className={style.textoQuatro}
                             data-aos="fade-right"
                         >
                             <span>
@@ -137,7 +137,7 @@ function Home ()
 
                         <div data-aos="fade-left" className='flex justify-center items-center'>
                             <button 
-                                className="my-8 mx-auto p-4 rounded-xl flex justify-center items-center gap-2 bg-rosa-pastel border-roxo-quase text-roxo-quase border-3 text-xl font-semibold font-Waldorf2 h-16 w-fit shadow-md shadow-black/70 hover:cursor-pointer hover:text-rosa-pastel hover:bg-roxo-quase hover:scale-105 transition-all duration-400 tablet:p-6 tablet:h-20 tablet:text-2xl tablet:my-auto tablet:mx-0 note:text-3xl note:gap-4 note:p-8 4k:text-4xl 4k:p-10 grande:p-12 grande:text-5xl"
+                                className={style.botao}
                             >
                                 <BiSolidDoorOpen />
                                 AGENDE SUA VISITA
