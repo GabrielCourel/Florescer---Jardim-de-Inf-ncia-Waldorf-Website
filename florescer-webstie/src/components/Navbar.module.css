@@ -2,7 +2,7 @@
 
 .containerPrincipal
 {
-    @apply relative top-0 h-30 z-20 tablet:flex meio:h-30 laptop:h-38 note:h-44 4k:h-60;
+    @apply relative top-0 h-30 z-20 tablet:flex meio:h-30 laptop:h-38 laptop:gap-2 note:h-44 note:gap-10 4k:h-60 4k:gap-20;
 }
 
 .fundoRosa
@@ -17,7 +17,7 @@
 
 .logoFlorescer
 {
-    @apply contents justify-between items-center tablet:flex tablet:justify-start meio:flex-col meio:justify-start meio:-translate-y-2 note:-translate-y-3;
+    @apply contents justify-between items-center tablet:flex tablet:justify-start meio:flex-col meio:justify-start meio:-translate-y-2 laptop:ml-14 note:-translate-y-3;
 }
 
 .logo
@@ -37,7 +37,7 @@
 
 .containerAquarelas
 {
-    @apply flex items-center mx-auto meio:gap-4 laptop:gap-8 note:gap-10;
+    @apply flex items-center meio:gap-4 meio:mr-4 laptop:gap-8 note:gap-10 4k:mx-auto;
 }
 
 .divAquarelas

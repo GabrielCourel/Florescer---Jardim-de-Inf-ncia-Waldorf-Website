@@ -10,11 +10,6 @@
     @apply bg-linear-to-r from-roxo-quase to-rosa-medio bg-clip-text text-transparent
 }
 
-.degrade3
-{
-    @apply bg-linear-to-r from-roxo-quase to-pink-500 bg-clip-text text-transparent
-}
-
 .divPrincipal
 {
     @apply flex flex-col justify-center items-center
@@ -22,7 +17,7 @@
 
 .fundoHome
 {
-    @apply relative -z-30 w-full h-190 -top-10 tablet:h-200 meio:h-140 laptop:h-160 note:h-180 4k:h-240
+    @apply relative -z-30 w-full h-190 -top-10 tablet:h-200 meio:h-160 note:h-180 4k:h-240
 }
 
 .divImagem
@@ -37,7 +32,7 @@
 
 .textoFoto
 {
-    @apply absolute mt-12 mx-8 flex flex-col justify-start items-center gap-3 h-full max-w-full text-white font-quaseW font-semibold tablet:mt-20 tablet:mx-20 meio:mt-25 laptop:mx-25 4k:mt-35 4k:mx-30
+    @apply absolute z-10 mt-12 mx-8 flex flex-col justify-start items-center gap-3 h-full max-w-full text-white font-quaseW font-semibold tablet:mt-20 tablet:mx-20 meio:mt-25 laptop:mx-25 4k:mt-35 4k:mx-30
 }
 
 .paragrafo
