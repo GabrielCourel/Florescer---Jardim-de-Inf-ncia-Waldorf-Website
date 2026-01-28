@@ -12,12 +12,12 @@
 
 .divlogoFlorescer
 {
-    @apply mx-8 flex justify-between items-center tablet:w-full tablet:mx-6 tablet:my-auto meio:w-auto meio:mx-0 meio:ml-2 meio:scale-80 meio:translate-y-1.5 laptop:scale-90 laptop:translate-y-2 note:ml-4 note:scale-100 4k:scale-130 4k:ml-14;
+    @apply mx-8 flex justify-between items-center tablet:w-full tablet:mx-6 tablet:my-auto meio:w-auto meio:mx-0 meio:ml-2 meio:scale-80 meio:translate-y-1.5 laptop:scale-90 laptop:translate-y-2 nav:ml-18 note:ml-8 note:scale-100 nav2:ml-26 4k:scale-130 4k:ml-14 grande:ml-40 grande:scale-150;
 }
 
 .logoFlorescer
 {
-    @apply contents justify-between items-center tablet:flex tablet:justify-start meio:flex-col meio:justify-start meio:-translate-y-2 laptop:ml-14 note:-translate-y-3;
+    @apply contents justify-between items-center meio:flex-col meio:justify-start meio:-translate-y-2 laptop:ml-14 note:-translate-y-3;
 }
 
 .logo

@@ -21,26 +21,40 @@ export default function Footer ()
                 </svg>
 
                 {/* Div para guardar o conteúdo */}
-                <div className="bg-roxo-quase relative z-20 w-full h-24 -mt-24">
+                <div className="bg-roxo-quase relative z-20 w-full h-24 -mt-24 4k:h-34 grande:h-46">
 
                     <div className="flex justify-center items-center mx-8 my-2 h-full">
 
                         <div className="flex flex-col justify-center items-center">
 
-                            <div className="flex justify-center items-center gap-3 text-rosa-pastel text-4xl">
-                                <img src={florescer2} className="w-30" />
+                            <div className="flex justify-center items-center gap-3 text-rosa-pastel text-4xl note:text-5xl 4k:text-6xl grande:text-7xl">
+
+                                <img src={florescer2} className="w-30 note:w-50 4k:w-70 grande:w-90" />
+
                                 <p> - </p>
+
+                                    <div className="hidden foto:flex flex-col justify-center items-center translate-y-2.75 laptop:translate-y-1">
+                                        <div className="flex items-center justify-center gap-1 h-10 text-rosa-pastel text-xs laptop:text-sm note:text-lg 4k:text-xl grande:text-3xl">
+                                            <p>Copyright</p>
+                                            <FaRegCopyright />
+                                            <p>2026 Florescer | Todos os direitos reservados</p>
+                                            <p className="text-rosa-pastel text-sm hidden laptop:block note:text-lg 4k:text-xl grande:text-3xl">| Criado por Gabriel Gomes Courel</p>
+                                        </div>
+                                        <p className="text-rosa-pastel text-xs -translate-y-2 laptop:hidden">Criado por Gabriel Gomes Courel</p>
+                                    </div>
+
+                                <p className="hidden foto:block"> - </p>
                                 <FaFacebookSquare className="hover:scale-110 hover:cursor-pointer transition-all duration-300"/>
                                 <FaInstagram className="hover:scale-110 hover:cursor-pointer transition-all duration-300"/>                                
                                 <FaWhatsapp className="hover:scale-110 hover:cursor-pointer transition-all duration-300"/>
                             </div>
 
-                            <div className="flex items-center justify-center gap-1 h-10 text-rosa-pastel text-xs">
+                            <div className="flex items-center justify-center gap-1 h-10 text-rosa-pastel text-xs foto:hidden">
                                 <p>Copyright</p>
                                 <FaRegCopyright />
                                 <p>2026 Florescer | Todos os direitos reservados</p>
                             </div>
-                            <p className=" text-rosa-pastel text-xs -translate-y-2">Criado por Gabriel Gomes Courel</p>
+                            <p className="text-rosa-pastel text-xs -translate-y-2 foto:hidden">Criado por Gabriel Gomes Courel</p>
 
                         </div>
                     </div>

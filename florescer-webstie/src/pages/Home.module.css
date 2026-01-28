@@ -67,12 +67,12 @@
 
 .textoUmTres
 {
-    @apply text-xl mx-8 font-quaseW text-justify hyphens-auto text-roxo-escuro tablet:text-2xl tablet:w-100 tablet:my-8 laptop:w-140 laptop:mx-0 laptop:mr-8 laptop:flex laptop:items-center note:text-3xl note:w-210 4k:text-4xl 4k:w-230 grande:text-5xl grande:w-300
+    @apply text-xl mx-8 font-quaseW text-justify hyphens-auto text-roxo-escuro tablet:text-2xl tablet:w-100 tablet:my-8 laptop:w-140 laptop:mx-0 laptop:mr-8 laptop:flex laptop:items-center note:text-3xl note:w-210 4k:text-4xl 4k:w-240 grande:text-5xl grande:w-300
 }
 
 .fotoUm
 {
-    @apply w-80 h-80 my-8 mr-4 ml-auto overflow-hidden note:w-90 note:h-90 grande:h-140 grande:w-140 rounded-tl-[4em] rounded-br-[4em]
+    @apply w-80 h-80 my-8 mr-4 ml-auto overflow-hidden note:w-90 note:h-90 4k:h-120 4k:w-120 grande:h-140 grande:w-140 rounded-tl-[4em] rounded-br-[4em]
 }
 
 .padrao
@@ -87,7 +87,7 @@
 
 .fotosDois
 {
-    @apply w-70 h-80 note:w-80 note:h-90 grande:h-140 grande:w-130
+    @apply w-70 h-80 note:w-80 note:h-90 4k:h-120 4k:w-110 grande:h-140 grande:w-130
 }
 
 .textoDois
@@ -97,20 +97,20 @@
 
 .fotoTres
 {
-    @apply w-80 h-80 my-8 mx-auto rounded-br-4xl overflow-hidden tablet:ml-4 note:w-90 note:h-90 grande:h-140 grande:w-140 rounded-tr-[4em] rounded-bl-[4em]
+    @apply w-80 h-80 my-8 mx-auto rounded-br-4xl overflow-hidden tablet:ml-4 note:w-90 note:h-90 4k:h-120 4k:w-120 grande:h-140 grande:w-140 rounded-tr-[4em] rounded-bl-[4em]
 }
 
 .divQuatro
 {
-    @apply flex flex-col tablet:flex-row tablet:justify-between meio:mx-20 note:my-12 4k:mx-40 grande:mx-60
+    @apply flex flex-col tablet:mx-6 tablet:flex-row tablet:justify-between meio:mx-20 note:my-12 4k:mx-40 grande:mx-60
 }
 
 .textoQuatro
 {
-    @apply text-xl text-center font-semibold mx-8 font-quaseW text-roxo-quase [&_.Typewriter]:inline tablet:flex tablet:justify-center tablet:items-center tablet:w-100 tablet:text-2xl tablet:my-8 tablet:mx-4 laptop:mx-0 laptop:w-120 note:text-3xl note:w-220 4k:text-4xl 4k:w-260 grande:text-5xl grande:w-280
+    @apply text-xl text-center font-semibold mx-8 font-quaseW text-roxo-quase [&_.Typewriter]:inline tablet:flex tablet:justify-center tablet:items-center tablet:w-100 tablet:text-2xl tablet:my-8 tablet:mx-4 laptop:mx-0 laptop:w-140 note:text-3xl note:w-220 4k:text-4xl 4k:w-260 grande:text-5xl grande:w-280
 }
 
 .botao
 {
-    @apply my-8 mb-18 mx-auto p-4 rounded-xl flex justify-center items-center gap-2 bg-rosa-pastel border-roxo-quase text-roxo-quase border-3 text-xl font-semibold font-Waldorf2 h-16 w-fit shadow-md shadow-black/70 hover:cursor-pointer hover:text-rosa-pastel hover:bg-roxo-quase hover:scale-105 transition-all duration-400 tablet:p-6 tablet:h-20 tablet:text-2xl tablet:my-auto tablet:mx-0 note:text-3xl note:gap-4 note:p-8 4k:text-4xl 4k:p-10 grande:p-12 grande:text-5xl
+    @apply my-8 mb-18 mx-auto p-4 rounded-xl flex justify-center items-center gap-2 bg-rosa-pastel border-roxo-quase text-roxo-quase border-3 text-xl font-semibold font-Waldorf2 h-16 w-fit shadow-md shadow-black/70 hover:cursor-pointer hover:text-rosa-pastel hover:bg-roxo-quase hover:scale-105 transition-all duration-400 tablet:p-6 tablet:h-20 tablet:my-auto tablet:mx-0 laptop:text-2xl laptop:gap-3 laptop:p-7 note:text-3xl note:gap-4 note:p-8 4k:text-4xl 4k:p-10 grande:p-12 grande:text-5xl
 }
