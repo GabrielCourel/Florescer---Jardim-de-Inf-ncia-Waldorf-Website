@@ -57,7 +57,7 @@
 
 .abaixo
 {
-    @apply bg-rosa-pastel max-w-full h-full -translate-y-34 overflow-x-hidden note:w-full
+    @apply bg-rosa-pastel max-w-full h-full -translate-y-34 overflow-x-hidden  -mb-34 note:w-full
 }
 
 .divUmTres
@@ -112,5 +112,5 @@
 
 .botao
 {
-    @apply my-8 mx-auto p-4 rounded-xl flex justify-center items-center gap-2 bg-rosa-pastel border-roxo-quase text-roxo-quase border-3 text-xl font-semibold font-Waldorf2 h-16 w-fit shadow-md shadow-black/70 hover:cursor-pointer hover:text-rosa-pastel hover:bg-roxo-quase hover:scale-105 transition-all duration-400 tablet:p-6 tablet:h-20 tablet:text-2xl tablet:my-auto tablet:mx-0 note:text-3xl note:gap-4 note:p-8 4k:text-4xl 4k:p-10 grande:p-12 grande:text-5xl
+    @apply my-8 mb-18 mx-auto p-4 rounded-xl flex justify-center items-center gap-2 bg-rosa-pastel border-roxo-quase text-roxo-quase border-3 text-xl font-semibold font-Waldorf2 h-16 w-fit shadow-md shadow-black/70 hover:cursor-pointer hover:text-rosa-pastel hover:bg-roxo-quase hover:scale-105 transition-all duration-400 tablet:p-6 tablet:h-20 tablet:text-2xl tablet:my-auto tablet:mx-0 note:text-3xl note:gap-4 note:p-8 4k:text-4xl 4k:p-10 grande:p-12 grande:text-5xl
 }
