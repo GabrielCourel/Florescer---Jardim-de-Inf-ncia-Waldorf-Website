@@ -1,0 +1,28 @@
+@import "../index.css";
+
+.degrade2
+{
+    @apply bg-linear-to-r from-roxo-escuro to-rosa-medio bg-clip-text text-transparent
+}
+
+.divPrincipal
+{
+    @apply flex flex-col justify-center items-center
+}
+
+/**/
+
+.divImagem
+{
+    @apply absolute -z-30 w-full h-full object-cover
+}
+
+.svgAbaixo
+{
+    @apply relative z-10 top-0 w-full rotate-180 h-30 -mt-10
+}
+
+.abaixo
+{
+    @apply bg-rosa-pastel w-full overflow-x-hidden -mt-20 flex flex-col justify-center items-center font-quaseW
+}

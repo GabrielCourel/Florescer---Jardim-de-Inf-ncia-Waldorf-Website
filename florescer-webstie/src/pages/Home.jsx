@@ -84,7 +84,7 @@ function Home ()
                     <div className={style.divDois}>
 
                         <div className={style.fotosDois}>
-                            <img src={corda} className={`${style.padrao} rounded-br-[4em]`} data-aos="fade-right"/>
+                            <img src={corda} className={`${style.padrao} rounded-br-[4em] object-right`} data-aos="fade-right"/>
                         </div>
 
                         <p  
@@ -129,19 +129,25 @@ function Home ()
                                         cursor: "",
                                         delay: 50,
                                         deleteSpeed: 50,
-                                        pauseFor: 1750,
+                                        pauseFor: 1500,
                                     }}
                                 />
                             </span>
                         </div>
 
                         <div data-aos="fade-left" className='flex justify-center items-center'>
-                            <button 
-                                className={style.botao}
+                            <a 
+                                href="https://wa.me/551438155648"
+                                target="_blank" 
+                                rel="noopener noreferrer"
                             >
-                                <BiSolidDoorOpen />
-                                AGENDE SUA VISITA
-                            </button>
+                                <button 
+                                    className={style.botao}
+                                >
+                                    <BiSolidDoorOpen />
+                                    AGENDE SUA VISITA
+                                </button>
+                            </a>
                         </div>
                     </div>
 

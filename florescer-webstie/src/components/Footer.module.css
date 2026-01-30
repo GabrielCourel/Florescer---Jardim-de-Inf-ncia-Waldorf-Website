@@ -1,0 +1,66 @@
+@import "../index.css";
+
+.principal
+{
+    @apply relative bottom-0 z-10
+}
+
+.margem
+{
+    @apply mx-8 my-2 h-full
+}
+
+.conteudo
+{
+    @apply bg-roxo-quase relative z-20 w-full h-24 -mt-24 4k:h-34 grande:h-46
+}
+
+.flex
+{
+    @apply flex justify-center items-center
+}
+
+.texto
+{
+    @apply gap-3 text-rosa-pastel text-4xl note:text-5xl 4k:text-6xl grande:text-7xl
+}
+
+.florescer
+{
+    @apply w-30 note:w-50 4k:w-70 grande:w-90
+}
+
+.textoTablet
+{
+    @apply hidden foto:flex flex-col justify-center items-center translate-y-2.75 laptop:translate-y-1
+}
+
+.textoUm
+{
+    @apply gap-1 h-10 text-rosa-pastel text-xs laptop:text-sm note:text-lg 4k:text-xl grande:text-3xl
+}
+
+.gabriel1
+{
+    @apply text-rosa-pastel text-sm hidden laptop:block note:text-lg 4k:text-xl grande:text-3xl
+}
+
+.gabriel2
+{
+    @apply text-rosa-pastel text-xs -translate-y-2 laptop:hidden
+}
+
+.icons
+{
+    @apply hover:scale-110 hover:cursor-pointer transition-all duration-300
+}
+
+.textoDois
+{
+    @apply gap-1 h-10 text-rosa-pastel text-xs foto:hidden
+}
+
+.gabriel3
+{
+    @apply text-rosa-pastel text-xs -translate-y-2 foto:hidden
+}

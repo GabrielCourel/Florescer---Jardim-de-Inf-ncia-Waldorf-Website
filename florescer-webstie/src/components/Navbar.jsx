@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import pincelada from "../assets/fundos/pincelada.png"
 import florescerJardim from "../assets/logos/florescer-jardim.png"
 import logo from "../assets/logos/logo.png"
@@ -32,7 +33,9 @@ function Navbar ()
             <div className={style.divlogoFlorescer}>   
 
                 <div className={style.logoFlorescer}>
-                    <img src={logo} className={style.logo} />
+                    <Link to="/">
+                        <img src={logo} className={style.logo} />
+                    </Link>
                     <img src={florescerJardim} className={style.florescerJardim} />
                 </div>
 
@@ -50,7 +53,9 @@ function Navbar ()
                     onMouseEnter={ () => setEscolaOpen (true) }
                     onMouseLeave={ () => setEscolaOpen (false) }
                 >
-                    <img src={pincelada} className={`${style.pincelada} group-hover/nav:scale-105`} />
+                    <Link to="/escola">
+                        <img src={pincelada} className={`${style.pincelada} group-hover/nav:scale-105`} />
+                    </Link>
                     <div className={`${style.escritoPincelada} text-rosa-quase group-hover/nav:text-white`}>
                         <span> nossa escola </span>
                         <svg 
@@ -84,7 +89,9 @@ function Navbar ()
                     onMouseEnter={ () => setEnsinoOpen (true) }
                     onMouseLeave={ () => setEnsinoOpen (false) }
                 >
-                    <img src={pincelada} className={`${style.pincelada} group-hover/nav:scale-105`}/>
+                    <Link to="/ensino">
+                        <img src={pincelada} className={`${style.pincelada} group-hover/nav:scale-105`}/>
+                    </Link>
                     <div className={`${style.escritoPincelada} text-rosa-quase group-hover/nav:text-white`}>
                         <span>ensino</span>
                         <svg 
@@ -118,7 +125,9 @@ function Navbar ()
                     onMouseEnter={ () => setFestasOpen (true) }
                     onMouseLeave={ () => setFestasOpen (false) }
                 >
-                    <img src={pincelada} className={`${style.pincelada} group-hover/nav:scale-105`} />
+                    <Link to="/festas">
+                        <img src={pincelada} className={`${style.pincelada} group-hover/nav:scale-105`} />
+                    </Link>
                     <div className={`${style.escritoPincelada} text-rosa-quase group-hover/nav:text-white`}>
                         <span>festas</span>
                         <svg 
@@ -154,8 +163,10 @@ function Navbar ()
                 </div>
 
                 {/* tópico contato */}
-                <div className={`${style.divAquarelaContato} group`}>   
-                    <img src={pincelada} className={`${style.pinceladaContato} group-hover:scale-105`} />
+                <div className={`${style.divAquarelaContato} group`}>  
+                    <Link to="/contato"> 
+                        <img src={pincelada} className={`${style.pinceladaContato} group-hover:scale-105`} />
+                    </Link>
                     <div className={`${style.escritoPincelada} text-rosa-quase group-hover:text-white`}>contato</div>
                 </div>
             </div>
