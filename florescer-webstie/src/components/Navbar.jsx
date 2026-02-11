@@ -57,7 +57,7 @@ function Navbar ()
                         <img src={pincelada} className={`${style.pincelada} group-hover/nav:scale-105`} />
                     </Link>
                     <div className={`${style.escritoPincelada} text-rosa-quase group-hover/nav:text-white`}>
-                        <span> nossa escola </span>
+                        <Link to="/escola"> nossa escola </Link>
                         <svg 
                             xmlns="http://www.w3.org/2000/svg" 
                             fill="none" 
@@ -93,7 +93,7 @@ function Navbar ()
                         <img src={pincelada} className={`${style.pincelada} group-hover/nav:scale-105`}/>
                     </Link>
                     <div className={`${style.escritoPincelada} text-rosa-quase group-hover/nav:text-white`}>
-                        <span>ensino</span>
+                        <Link to="ensino">ensino</Link>
                         <svg 
                             xmlns="http://www.w3.org/2000/svg" 
                             fill="none" 
@@ -129,7 +129,7 @@ function Navbar ()
                         <img src={pincelada} className={`${style.pincelada} group-hover/nav:scale-105`} />
                     </Link>
                     <div className={`${style.escritoPincelada} text-rosa-quase group-hover/nav:text-white`}>
-                        <span>festas</span>
+                        <Link to="/festas">festas</Link>
                         <svg 
                             xmlns="http://www.w3.org/2000/svg" 
                             fill="none" 
@@ -167,7 +167,7 @@ function Navbar ()
                     <Link to="/contato"> 
                         <img src={pincelada} className={`${style.pinceladaContato} group-hover:scale-105`} />
                     </Link>
-                    <div className={`${style.escritoPincelada} text-rosa-quase group-hover:text-white`}>contato</div>
+                    <Link to="/contato" className={`${style.escritoPincelada} text-rosa-quase group-hover:text-white`}>contato</Link>
                 </div>
             </div>
 
@@ -181,7 +181,13 @@ function Navbar ()
 
                         {/* tópico escola mobile */}
                         <div className={style.topicosM}>
-                            <p className={style.titulosM}>Nossa escola</p>
+                            <Link 
+                                to="/escola"
+                                onClick={() => setHamburgerOpen(false)}
+                                className={style.titulosM}
+                            >
+                                Nossa escola
+                            </Link>
                             <div className={style.subtitulosM}>
                                 <p>A história da florescer</p>
                                 <p>A pedagogia Waldorf</p>
@@ -190,7 +196,13 @@ function Navbar ()
 
                         {/* tópico ensino mobile */}
                         <div className={style.topicosM}> 
-                            <p className={style.titulosM}>Ensino</p>
+                            <Link
+                                to="/ensino"
+                                onClick={() => setHamburgerOpen(false)}
+                                className={style.titulosM}
+                            >
+                                Ensino
+                            </Link>
                             <div className={style.subtitulosM}>
                                 <p>Jardim de infância</p>
                                 <p>Maternal</p>
@@ -202,7 +214,13 @@ function Navbar ()
                     <div className={style.divsT}>
                         {/* tópico festas mobile */}                    
                         <div className={style.topicosM}>
-                            <p className={style.titulosM}>Festas</p>
+                            <Link 
+                                to="/festas"
+                                onClick={() => setHamburgerOpen(false)}
+                                className={style.titulosM}
+                            >
+                                Festas
+                            </Link>
                             <div className={style.subtitulosM}>
                                 <p>Festa da lanterna</p>
                                 <p>Festa da família</p>
@@ -212,7 +230,13 @@ function Navbar ()
                         </div>
 
                         {/* tópico contato mobile */}
-                        <p className={style.contatoM}>Contato</p>
+                        <Link 
+                            to="/contato" 
+                            onClick={() => setHamburgerOpen(false)}
+                            className={style.contatoM}
+                        >
+                            Contato
+                        </Link>
                     </div>
 
                 </div>

@@ -9,7 +9,6 @@
 {
     @apply flex flex-col justify-center items-center
 }
-
 /**/
 
 .divImagem
@@ -24,5 +23,5 @@
 
 .abaixo
 {
-    @apply bg-rosa-pastel w-full overflow-x-hidden -mt-20 flex flex-col justify-center items-center font-quaseW
+    @apply bg-rosa-pastel z-10 w-full overflow-x-hidden -mt-20 flex flex-col items-center font-quaseW
 }

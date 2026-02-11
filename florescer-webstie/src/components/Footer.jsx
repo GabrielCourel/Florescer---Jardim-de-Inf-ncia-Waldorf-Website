@@ -8,7 +8,7 @@ import { FaRegCopyright } from "react-icons/fa6";
 export default function Footer ()
 {
     return (
-        <div className="-mt-10">
+        <div className="-mt-10 relative bottom-0">
 
             <div className={style.principal}>
 
