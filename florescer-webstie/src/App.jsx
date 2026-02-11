@@ -16,13 +16,13 @@ function App()
 
             <Navbar></Navbar>
 
-                <main className='flex-1 w-full bg-rosa-pastel'>
+                <main className='flex-1 w-full'>
                     <Routes>
                         <Route path='/' element={<Home/>} />
                         <Route path='/escola' element={<Escola/>}/>
                         <Route path='/ensino' element={<Ensino/>}/>
                         <Route path='/festas' element={<Festas/>}/>
-                        <Route path='/contato' element={<Contato/>}/>
+                        <Route path='/contato' className="bg-rosa-pastel" element={<Contato/>}/>
                         <Route path="*" element={<Navigate to="/" />} />
                     </Routes>
                 </main>
