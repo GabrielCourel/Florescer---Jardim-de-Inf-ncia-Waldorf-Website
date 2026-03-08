@@ -25,3 +25,33 @@
 {
     @apply bg-rosa-pastel z-10 w-full overflow-x-hidden -mt-20 flex flex-col items-center font-quaseW
 }
+
+.fotos
+{
+    @apply relative w-full h-100 -mt-10 overflow-hidden tablet:h-140 laptop:h-160 note:h-180 4k:h-220 grande:h-290
+}
+
+.carrossel
+{
+    @apply h-full w-full object-cover min-w-full shrink-0
+}
+
+.localização
+{
+    @apply flex flex-col items-center justify-center text-center mx-14 my-10 font-quaseW text-xl font-bold meio:text-2xl meio:my-14 laptop:text-3xl laptop:my-16 4k:text-4xl grande:text-5xl grande:mt-18
+}
+
+.visita
+{
+    @apply w-fit grande:rounded-xl grande:my-5 transition-all duration-400
+}
+
+.botao
+{
+    @apply flex h-full w-full items-center jusitfy-center rounded-sm grande:p-6 grande:rounded-xl transition-all duration-400
+}
+
+.estiloBotao
+{
+    @apply font-bold transition-all duration-400
+}

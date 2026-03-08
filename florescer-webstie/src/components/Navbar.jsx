@@ -26,7 +26,10 @@ function Navbar ()
                 preserveAspectRatio="none"      //Permite que o SVG estique para preencher o container 
                 className={style.fundoRosa}
             >
-                <path d="M 1440 0 L 0 0 L 0 135 Q 390 150 640 137 Q 1140 115 1440 135 Z" className="fill-rosa-quase"/>
+                <path 
+                    d="M 1440 0 L 0 0 L 0 135 Q 390 150 640 137 Q 1140 115 1440 135 Z"
+                    className="fill-rosa-quase"
+                />
             </svg>
 
             {/* logo Florescer */}
