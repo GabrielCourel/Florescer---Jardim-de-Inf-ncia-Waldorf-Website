@@ -48,7 +48,7 @@
 
 .botao
 {
-    @apply flex h-full w-full items-center jusitfy-center rounded-sm grande:p-6 grande:rounded-xl transition-all duration-400
+    @apply flex h-full w-full items-center justify-center rounded-sm grande:p-6 grande:rounded-xl transition-all duration-400
 }
 
 .estiloBotao

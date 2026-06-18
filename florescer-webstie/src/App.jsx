@@ -22,7 +22,7 @@ function App()
                         <Route path='/escola' element={<Escola/>}/>
                         <Route path='/ensino' element={<Ensino/>}/>
                         <Route path='/festas' element={<Festas/>}/>
-                        <Route path='/contato' className="bg-rosa-pastel" element={<Contato/>}/>
+                        <Route path='/contato' element={<Contato/>}/>
                         <Route path="*" element={<Navigate to="/" />} />
                     </Routes>
                 </main>

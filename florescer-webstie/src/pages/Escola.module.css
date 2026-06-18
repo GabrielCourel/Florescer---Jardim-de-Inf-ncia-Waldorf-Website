@@ -1,0 +1,106 @@
+@import "../index.css";
+
+.degrade
+{
+    @apply bg-linear-to-r from-white to-rosa-quase bg-clip-text text-transparent
+}
+
+.degrade2
+{
+    @apply bg-linear-to-r from-roxo-quase to-rosa-medio bg-clip-text text-transparent
+}
+
+.divPrincipal
+{
+    @apply flex flex-col justify-center items-center
+}
+
+.fundoHome
+{
+    @apply relative -z-30 w-full h-130 -top-10 tablet:h-160 meio:h-160 note:h-180 4k:h-240
+}
+
+.divImagem
+{
+    @apply absolute -z-30 w-full h-full object-cover
+}
+
+.fundoRoxo
+{
+    @apply absolute -z-20 w-full h-full bg-roxo-escuro opacity-55
+}
+
+.textoFoto
+{
+    @apply absolute z-10 mx-8 flex flex-col justify-center items-center gap-3 h-full max-w-full text-white font-quaseW font-bold tablet:mx-20 laptop:mx-25 4k:mx-30
+}
+
+.paragrafo
+{
+    @apply text-3xl font-quaseW tablet:text-4xl meio:text-5xl note:text-6xl 4k:text-7xl
+}
+
+.mencao
+{
+    @apply  text-xl font-quaseW self-start -translate-x-4 tablet:text-2xl meio:text-3xl note:text-4xl 4k:text-5xl
+}
+
+.abaixoDaFoto
+{
+    @apply flex flex-col items-center justify-center bg-rosa-pastel
+}
+
+.svgAbaixo
+{
+    @apply relative -z-20 top-0 w-full rotate-180 h-30 -translate-y-22
+}
+
+.abaixo
+{
+    @apply bg-rosa-pastel max-w-full h-full -translate-y-34 overflow-x-hidden -mb-26 note:w-full
+}
+
+.div
+{
+    @apply flex flex-col mx-8 meio:mx-20 4k:mx-40 grande:mx-60
+}
+
+.divUm
+{
+    @apply flex flex-col mx-8 meio:mx-20 4k:mx-40 grande:mx-60
+}
+
+.divUmDois
+{
+    @apply flex flex-col mx-8 meio:mx-0
+}
+
+.tituloUm
+{
+    @apply mx-8 my-3 text-2xl text-justify font-Waldorf2bold tablet:text-3xl tablet:mb-0 meio:mx-0 note:text-4xl grande:text-6xl
+} 
+
+.textoUm
+{
+    @apply text-xl font-quaseW text-justify hyphens-auto text-roxo-escuro tablet:text-2xl tablet:w-100 tablet:my-8 tablet:mr-8 laptop:w-140 laptop:ml-0 laptop:flex laptop:items-center note:text-3xl note:w-210 4k:text-4xl 4k:w-240 grande:text-5xl grande:w-300
+}
+
+.textoDois
+{
+    @apply mx-8 text-xl font-quaseW text-justify hyphens-auto flex flex-col gap-2 text-roxo-escuro tablet:text-2xl tablet:w-100 tablet:my-8 meio:mx-0 meio:min-w-full meio:gap-8 laptop:w-140 laptop:ml-0 laptop:mr-8 laptop:flex laptop:items-center note:text-3xl note:w-210 note:gap-16 4k:text-4xl 4k:w-240 4k:gap-80 grande:text-5xl grande:w-300
+}
+
+.padrao
+{
+    @apply w-full h-full object-cover
+}
+
+.fotoUm
+{
+    @apply w-60 h-60 my-8 m-auto overflow-hidden note:w-90 note:h-90 4k:h-120 4k:w-120 grande:h-140 grande:w-140 rounded-tl-[4em] rounded-br-[4em]
+}
+
+.fotoDois
+{
+    @apply w-80 h-80 my-8 mr-4 ml-auto overflow-hidden note:w-90 note:h-90 4k:h-120 4k:w-120 grande:h-140 grande:w-140 rounded-bl-[4em] rounded-tr-[4em]
+}

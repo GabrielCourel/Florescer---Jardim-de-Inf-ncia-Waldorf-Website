@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import Carousel from "../components/Carousel"
 import parque from "../assets/images/parque.jpeg"
 import parque2 from "../assets/images/parque2.png"
@@ -6,11 +7,20 @@ import dentro2 from "../assets/images/dentro2.png"
 import style from "./Contato.module.css"
 import fachada from "../assets/images/fachada.jpeg"
 import GoogleMapsComponent from "../components/Map"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Contato () 
 {
 
     const slides = [ fachada, parque, parque2, dentro1, dentro2 ]
+
+    useEffect(() => {
+            AOS.init({
+                duration: 600,
+                once: false,
+            });
+        }, []);
 
     return (
         <div className="h-full flex-1">
@@ -44,11 +54,19 @@ export default function Contato ()
 
                     {/* Texto da localização */}
                     <div className={style.localização}>
-                        <span className={style.degrade2}> 
+                        <span 
+                            className={style.degrade2}
+                            data-aos="fade-up"
+                            data-aos-duration="600"
+                        > 
                             Saiba onde estamos localizados, conheça nossos espaços e 
                         </span>
 
-                        <div className={`${style.visita} shadow-black/40 shadow-lg rounded-lg my-3 p-1 bg-linear-to-r from-roxo-escuro to-rosa-medio group group-hover:cursor-pointer`}>
+                        <div 
+                            className={`${style.visita} shadow-black/40 shadow-lg rounded-lg my-3 p-1 bg-linear-to-r from-roxo-escuro to-rosa-medio group group-hover:cursor-pointer`}
+                            data-aos="fade-up"
+                            data-aos-duration="600"
+                        >
                             <button className={`${style.botao} p-3 rounded-sm group-hover:bg-linear-to-r bg-rosa-pastel group-hover:from-roxo-escuro group-hover:to-rosa-medio group-hover:cursor-pointer`}>
                                 <a
                                     href="https://wa.me/551438155648"
