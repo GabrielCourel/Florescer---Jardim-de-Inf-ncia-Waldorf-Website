@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import style from "./Escola.module.css"
 import bonecas from "../assets/images/bonecas.jpeg"
 import steiner from "../assets/images/Steiner.jpg"
@@ -7,12 +8,53 @@ import parque4 from "../assets/images/parque4.jpeg"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+const scrollToSection = (selector) => {
+    const section = document.querySelector(selector);
+    if (!section) return;
+
+    const startPosition = window.scrollY;
+    const targetPosition = section.getBoundingClientRect().top + window.scrollY;
+    const distance = targetPosition - startPosition;
+    const duration = 800;
+    let startTime = null;
+
+    const easeInOut = (progress) => (
+        progress < 0.5
+            ? 2 * progress * progress
+            : 1 - Math.pow(-2 * progress + 2, 2) / 2
+    );
+
+    const animation = (currentTime) => {
+        if (!startTime) startTime = currentTime;
+
+        const elapsedTime = currentTime - startTime;
+        const progress = Math.min(elapsedTime / duration, 1);
+
+        window.scrollTo(0, startPosition + distance * easeInOut(progress));
+
+        if (elapsedTime < duration) {
+            requestAnimationFrame(animation);
+        }
+    };
+
+    requestAnimationFrame(animation);
+};
+
 export default function Escola () 
 {
+    const location = useLocation();
 
     useEffect(() => {
         AOS.init({ duration: 600, once: false});
     }, []);
+
+    useEffect(() => {
+        if (!location.hash) return;
+
+        requestAnimationFrame(() => {
+            scrollToSection(location.hash);
+        });
+    }, [location.hash]);
 
     return (
         <div>
@@ -49,7 +91,7 @@ export default function Escola ()
 
                 <div className={style.abaixo}>
 
-                    <div className={style.divUm}>
+                    <div id="nossa-historia" className={style.divUm}>
 
                         <p 
                             className={`${style.tituloUm} ${style.degrade2}`}
@@ -63,7 +105,7 @@ export default function Escola ()
                                 className={style.textoUm}
                                 data-aos="fade-left"
                             >
-                                O Jardim Florescer nasceu no final de 2008 quando algumas famílias perceberam a importância de ter uma escola Waldorf, neste caso um Jardim de Infância, no centro de Botucatu, e com a ajuda de todas as famílias que lá estavam, a escola tomou corpo, tornou-se viva e até hoje, as famílias, junto com o corpo pedagógico, são o pulsar deste Florescer <br />
+                                O Jardim Florescer nasceu no final de 2008 quando algumas famílias perceberam a importância de ter uma escola Waldorf, neste caso um Jardim de Infância, no centro de Botucatu e com a ajuda de todas as famílias que lá estavam, a escola tomou corpo, tornou-se viva e até hoje, as famílias, junto com o corpo pedagógico, são o pulsar deste Florescer <br />
                             </p>
                         
                             <div className={style.fotoDois} data-aos="fade-left">
@@ -73,7 +115,7 @@ export default function Escola ()
 
                     </div>
 
-                    <div className={`${style.divUm} overflow-hidden`}>
+                    <div id="a-pedagogia" className={`${style.divUm} overflow-hidden`}>
 
                         <p 
                             className={`${style.tituloUm} ${style.degrade2}`}
@@ -85,11 +127,11 @@ export default function Escola ()
                         <div className={`${style.textoDois} meio:flex-row!`}>
                             <div className={`flex flex-col gap-2 text-xl font-quaseW text-justify hyphens-auto text-roxo-escuro tablet:text-2xl meio:gap-4 note:text-3xl note:gap-6 4k:text-4xl 4k:gap-12 grande:text-5xl`}>
                                 <p data-aos="fade-right">
-                                    Aqui abordamos a Pedagogia Waldorf, um método que se concentra no desenvolvimento integral da criança desde a infância até a idade escolar, enfatizando a brincadeira, a exploração, o fazer junto e a criatividade como meios de aprendizado.
+                                    Aqui abordamos a Pedagogia Waldorf, um método que se concentra no desenvolvimento integral da criança desde a infância até a idade escolar, enfatizando a brincadeira, a exploração, o fazer junto e a criatividade como meios de aprendizado
                                 </p>
 
                                 <p data-aos="fade-left">
-                                    Essa abordagem foi criada em 1919, na Alemanha, por Rudolf Steiner, a pedido do diretor da fábrica Waldorf-Astoria, que buscava uma educação mais humanizada para os filhos dos operários.
+                                    Essa abordagem foi criada em 1919, na Alemanha, por Rudolf Steiner, a pedido do diretor da fábrica Waldorf-Astoria, que buscava uma educação mais humanizada para os filhos dos operários
                                 </p>
                             </div>
 

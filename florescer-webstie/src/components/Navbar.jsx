@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import pincelada from "../assets/fundos/pincelada.png"
 import florescerJardim from "../assets/logos/florescer-jardim.png"
 import logo from "../assets/logos/logo.png"
-import fundoMobile from "../assets/fundos/fundo-mobile.png"
+import fundoMobile from "../assets/fundos/fundo-mobile.jpeg"
 import style from "./Navbar.module.css";
 import { Slant as Hamburger } from 'hamburger-react'
 import { useState } from "react"
@@ -15,6 +15,17 @@ function Navbar ()
     const [escolaOpen, setEscolaOpen] = useState (false);
     const [ensinoOpen, setEnsinoOpen] = useState (false);
     const [festasOpen, setFestasOpen] = useState (false);
+
+    const scrollEnsinoSection = (selector) => {
+        if (window.location.pathname !== "/ensino") return;
+
+        requestAnimationFrame(() => {
+            document.querySelector(selector)?.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+            });
+        });
+    };
 
     return(
         
@@ -73,14 +84,14 @@ function Navbar ()
 
                         {/* modal controlado por useState */}
                         <div className={`${style.useState} ${ escolaOpen ? " pointer-events-auto opacity-100 meio:translate-y-29 laptop:translate-y-30 note:translate-y-24 4k:translate-y-34" : "pointer-events-none opacity-0 meio:translate-y-14.5 laptop:translate-y-13 note:translate-y-4 4k:translate-y-5"}`}>
-                            <div className="cursor-pointer group">
+                            <Link to="/escola#nossa-historia" className="cursor-pointer group">
                                 <p className="transition-all duration-400 group-hover:text-white">A história da Florescer</p>
                                 <div className={style.divBarra}></div>
-                            </div>
-                            <div className="cursor-pointer group">
+                            </Link>
+                            <Link to="/escola#a-pedagogia" className="cursor-pointer group">
                                 <p className="transition-all duration-400 group-hover:text-white">A pedagogia Waldorf</p>
                                 <div className={style.divBarra}></div>   
-                            </div>
+                            </Link>
                         </div>
 
                     </div>
@@ -96,7 +107,7 @@ function Navbar ()
                         <img src={pincelada} className={`${style.pincelada} group-hover/nav:scale-105`}/>
                     </Link>
                     <div className={`${style.escritoPincelada} text-rosa-quase group-hover/nav:text-white`}>
-                        <Link to="ensino">ensino</Link>
+                        <Link to="/ensino">ensino</Link>
                         <svg 
                             xmlns="http://www.w3.org/2000/svg" 
                             fill="none" 
@@ -109,14 +120,22 @@ function Navbar ()
 
                         {/* modal controlado por useState */}
                         <div className={`${style.useState} ${ ensinoOpen ? "pointer-events-auto opacity-100 meio:translate-y-25 laptop:translate-y-26 note:translate-y-24 4k:translate-y-34" : "pointer-events-none opacity-0 meio:translate-y-11 laptop:translate-y-9 note:translate-y-4 4k:translate-y-5"}`}>
-                            <div className="cursor-pointer group">
-                                <p className="transition-all duration-400 group-hover:text-white">Jardim de infância</p>
+                            <Link
+                                to="/ensino#nossa-rotina"
+                                onClick={() => scrollEnsinoSection("#nossa-rotina")}
+                                className="cursor-pointer group"
+                            >
+                                <p className="transition-all duration-400 group-hover:text-white">Nossa rotina</p>
                                 <div className={style.divBarra}></div>   
-                            </div>
-                            <div className="cursor-pointer group">
-                                <p className="transition-all duration-400 group-hover:text-white">Maternal</p>
+                            </Link>
+                            <Link
+                                to="/ensino#desenvolvimento"
+                                onClick={() => scrollEnsinoSection("#desenvolvimento")}
+                                className="cursor-pointer group"
+                            >
+                                <p className="transition-all duration-400 group-hover:text-white">Desenvolvimento</p>
                                 <div className={style.divBarra}></div>   
-                            </div>
+                            </Link>
                         </div>
 
                     </div>
@@ -175,7 +194,7 @@ function Navbar ()
             </div>
 
             {/* modal mobile e tablet para a navbar*/}
-            <div className={`${style.modalMT} ${ hamburgerOpen ? "opacity-100 translate-x-0 pointer-events-auto" : "pointer-events-none translate-x-full opacity-0"}`}>
+            <div className={`${style.modalMT} ${ hamburgerOpen ? "visible opacity-100 translate-x-0 pointer-events-auto" : "invisible pointer-events-none translate-x-full opacity-0"}`}>
                 <img src={fundoMobile} className={style.fundoM}/>
 
                 <div className={style.containerM}>
@@ -192,8 +211,18 @@ function Navbar ()
                                 Nossa escola
                             </Link>
                             <div className={style.subtitulosM}>
-                                <p>A história da florescer</p>
-                                <p>A pedagogia Waldorf</p>
+                                <Link
+                                    to="/escola#nossa-historia"
+                                    onClick={() => setHamburgerOpen(false)}
+                                >
+                                    A história da florescer
+                                </Link>
+                                <Link
+                                    to="/escola#a-pedagogia"
+                                    onClick={() => setHamburgerOpen(false)}
+                                >
+                                    A pedagogia Waldorf
+                                </Link>
                             </div>
                         </div>
 
@@ -207,8 +236,24 @@ function Navbar ()
                                 Ensino
                             </Link>
                             <div className={style.subtitulosM}>
-                                <p>Jardim de infância</p>
-                                <p>Maternal</p>
+                                <Link
+                                    to="/ensino#nossa-rotina"
+                                    onClick={() => {
+                                        setHamburgerOpen(false);
+                                        scrollEnsinoSection("#nossa-rotina");
+                                    }}
+                                >
+                                    Nossa rotina
+                                </Link>
+                                <Link
+                                    to="/ensino#desenvolvimento"
+                                    onClick={() => {
+                                        setHamburgerOpen(false);
+                                        scrollEnsinoSection("#desenvolvimento");
+                                    }}
+                                >
+                                    Desenvolvimento
+                                </Link>
                             </div>
                         </div>
 

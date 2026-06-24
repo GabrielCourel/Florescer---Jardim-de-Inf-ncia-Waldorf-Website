@@ -77,7 +77,7 @@
 
 .tituloUm
 {
-    @apply mx-8 my-3 text-2xl text-justify font-Waldorf2bold tablet:text-3xl tablet:mb-0 meio:mx-0 note:text-4xl grande:text-6xl
+    @apply mx-8 my-3 text-3xl text-justify font-Waldorf2bold tablet:text-3xl tablet:mb-0 meio:mx-0 note:text-4xl grande:text-6xl
 } 
 
 .textoUm

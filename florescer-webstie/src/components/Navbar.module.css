@@ -86,7 +86,7 @@
 
 .modalMT
 {
-    @apply fixed z-50 top-0 h-screen w-full transition-all duration-600 ease-in-out flex flex-col justify-center tablet:flex tablet:justify-center meio:hidden;
+    @apply fixed z-50 top-0 h-screen w-full overflow-hidden transition-all duration-600 ease-in-out flex flex-col justify-center tablet:flex tablet:justify-center meio:hidden;
 }
 
 .fundoM

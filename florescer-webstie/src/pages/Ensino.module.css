@@ -5,6 +5,16 @@
     @apply bg-linear-to-r from-white to-rosa-quase bg-clip-text text-transparent
 }
 
+.degrade2
+{
+    @apply bg-linear-to-r from-roxo-quase to-rosa-medio bg-clip-text text-transparent
+}
+
+.degrade3
+{
+    @apply bg-linear-to-r from-roxo-escuro to-rosa-medio bg-clip-text text-transparent
+}
+
 .divPrincipal
 {
     @apply flex flex-col justify-center items-center
@@ -48,4 +58,54 @@
 .svgAbaixo
 {
     @apply relative -z-20 top-0 w-full rotate-180 h-30 -translate-y-22
+}
+
+.abaixo
+{
+    @apply bg-rosa-pastel max-w-full h-full -translate-y-34 overflow-x-hidden -mb-26 note:w-full
+}
+
+.divUm
+{
+    @apply flex flex-col mx-8 meio:mx-20 4k:mx-40 grande:mx-60
+}
+
+.tituloUm
+{
+    @apply mx-8 my-3 text-3xl text-justify font-Waldorf2bold tablet:text-3xl tablet:mb-3 meio:mx-0 meio:mb-4 note:text-4xl note:mb-5  grande:text-6xl grande:mb-6
+}
+
+.tituloDois
+{
+    @apply mx-8 mt-6 text-3xl text-justify font-Waldorf2bold tablet:text-3xl tablet:mb-3 meio:mx-0 meio:mb-4 note:text-4xl note:mb-5  grande:text-6xl grande:mb-6
+}
+
+.divUmDois
+{
+    @apply flex flex-col mx-8 meio:mx-0
+}
+
+.textoUm
+{
+    @apply text-xl font-quaseW text-justify hyphens-auto text-roxo-escuro tablet:text-2xl tablet:w-100 tablet:mr-8 laptop:w-140 laptop:ml-0 laptop:flex laptop:items-center note:text-3xl note:w-210 4k:text-4xl 4k:w-240 grande:text-5xl grande:w-300
+}
+
+.textoDois
+{
+    @apply font-quaseW text-xl my-6 flex justify-center items-center w-full text-center tablet:mx-auto tablet:my-8 meio:my-14 laptop:my-16 note:my-18 note:text-3xl 4k:my-22 4k:text-4xl grande:my-28 grande:text-5xl
+}
+
+.fotoDois
+{
+    @apply w-80 h-80 my-8 mr-4 ml-auto overflow-hidden note:w-90 note:h-90 4k:h-120 4k:w-120 grande:h-140 grande:w-140 rounded-bl-[4em] rounded-tr-[4em]
+}
+
+.fotoUm
+{
+    @apply w-80 h-80 my-8 mr-auto overflow-hidden note:w-90 note:h-90 4k:h-120 4k:w-120 grande:h-140 grande:w-140 rounded-bl-[4em] rounded-br-[3em] rounded-tl-[3em]
+}
+
+.padrao
+{
+    @apply w-full h-full object-cover
 }
